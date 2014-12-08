@@ -9,6 +9,36 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    int operator;
+    NSString *previous;
+    NSString *current;
+}
+@property (weak, nonatomic) IBOutlet UILabel *TheTotal;
+
+-(void) doEquals;
+
+
+- (IBAction)numButtons:(UIButton *)sender;
+
+
+- (IBAction)opButtons:(UIButton *)sender;
+
+
+
+- (IBAction)DecimalButton:(UIButton *)sender;
+
+
+
+- (IBAction)ClrButton:(UIButton *)sender;
+
+
+
+- (IBAction)EqButton:(UIButton *)sender;
+
+
+
+
 
 
 @end
